@@ -1,0 +1,8 @@
+/* Revision 17 — desktop positioning refinements */
+@media (min-width:701px) {
+  /* Move the new velvet bow 10px lower without changing its size or stacking. */
+  .closing::before { top:-225px!important; }
+  /* Lower price and availability together, leaving space before description. */
+  .product-details #product-price { position:relative; top:12px; }
+  .product-details #product-stock { position:relative; top:12px; margin-bottom:34px!important; }
+}

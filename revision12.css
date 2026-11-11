@@ -1,0 +1,30 @@
+/* SVETLOVE revision 12: focused visual adjustments */
+@media (min-width:701px) {
+  /* Bow stays in front of the logo; do not crop its lower edge. */
+  .closing { overflow:visible!important; isolation:isolate; }
+  .closing::before { top:-248px!important; height:610px!important; background-size:100% auto!important; background-position:center top!important; z-index:50!important; }
+  .closing-content { z-index:7!important; }
+  /* Footer is shared across all three pages; same markup and style. */
+  .shared-footer { box-sizing:border-box; }
+  /* Align purchase buttons with the bottom edge of the main product image. */
+  .product-layout { align-items:start!important; }
+  .product-details { display:flex; flex-direction:column; min-height:480px; }
+  .product-details .product-actions { margin-top:auto!important; margin-bottom:0!important; }
+  .product-details .description { margin-top:22px!important; }
+  .product-details .description p { margin-bottom:12px!important; }
+  .product-details .specs { margin-bottom:12px!important; }
+  .product-details .specs div { padding-top:6px!important; padding-bottom:6px!important; }
+  .product-photo-frame { position:relative; }
+  .product-photo-frame .gallery-prev { left:12px!important; }
+  .product-photo-frame .gallery-next { right:12px!important; }
+}
+@media (max-width:700px) {
+  .about blockquote { color:#D4B47D!important; }
+  .about blockquote::before,.about blockquote::after { color:#D4B47D!important; }
+  .closing::before { top:-77px!important; }
+  .closing-content { top:80px!important; bottom:20px!important; }
+  .closing-content .brand-footer { transform:translateY(-14px)!important; }
+  /* Move CTA and socials visibly up into the closing photograph. */
+  .closing-content .contact-cta { transform:translateY(-118px)!important; position:relative!important; }
+  .closing-content .closing-social { transform:translateY(-106px)!important; position:relative!important; }
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "SV002",
+    "name": "Карусель",
+    "price": 8500,
+    "image": "assets/catalog-10.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Яркая праздничная композиция с красными ягодами, хвойными ветвями и декоративными лошадками.",
+    "width": "40 см",
+    "height": "62 см"
+  },
+  {
+    "id": "SV003",
+    "name": "Ледяной бокал",
+    "price": 11500,
+    "image": "assets/catalog-13.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV004",
+    "name": "Золотое сияние",
+    "price": 12500,
+    "image": "assets/catalog-11.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV005",
+    "name": "Тихая деревня",
+    "price": 15500,
+    "image": "assets/catalog-08.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV006",
+    "name": "Рубиновый вечер",
+    "price": 15000,
+    "image": "assets/catalog-14.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV007",
+    "name": "Зимняя баллада",
+    "price": 10000,
+    "image": "assets/catalog-09.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV008",
+    "name": "Розовый иней",
+    "price": 11000,
+    "image": "assets/catalog-02.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV009",
+    "name": "Рождество",
+    "price": 32000,
+    "image": "assets/catalog-12.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV010",
+    "name": "Пора на лыжи",
+    "price": 8500,
+    "image": "assets/catalog-05.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV011",
+    "name": "Полночное сияние",
+    "price": 12800,
+    "image": "assets/catalog-06.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV012",
+    "name": "Золотая сказка",
+    "price": 6800,
+    "image": "assets/catalog-03.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  },
+  {
+    "id": "SV013",
+    "name": "Зимняя элегия",
+    "price": 7800,
+    "image": "assets/catalog-01.jpg",
+    "category": "Зимняя сказка",
+    "available": true,
+    "description": "Авторская интерьерная композиция ручной работы.",
+    "width": "Уточняется",
+    "height": "Уточняется"
+  }
+]

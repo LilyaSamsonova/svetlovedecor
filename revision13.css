@@ -1,0 +1,30 @@
+/* Revision 13 — targeted refinements requested after v12 */
+@media (min-width:701px) {
+  /* Move bow 10px down without clipping it. */
+  .closing { overflow:visible!important; }
+  .closing::before { top:-238px!important; }
+  /* Same footer typography on all three pages. */
+  .shared-footer,
+  .shared-footer .footer-handle,
+  .shared-footer .footer-policy,
+  .shared-footer .footer-year { font-size:16px!important; }
+  /* Shift product content, but not the back arrow, down 10px. */
+  .product-page .product-layout { position:relative; top:10px; }
+}
+@media (max-width:700px) {
+  /* Lift quote, preserving original layout around it. */
+  .about blockquote { transform:translateY(-12px)!important; }
+  /* Lower only the closing logo slightly. */
+  .closing-content .brand-footer { transform:translateY(-8px)!important; }
+  /* Consistent widths for CTA-style buttons on the homepage. */
+  .hero .pill,
+  .all-products,
+  .collections-cta,
+  .closing-content .contact-cta {
+    box-sizing:border-box;
+    width:min(303px,calc(100vw - 36px))!important;
+    max-width:100%!important;
+    text-align:center;
+    justify-content:center;
+  }
+}

@@ -1,0 +1,41 @@
+/* SVETLOVE revision 10 — scoped overrides after previous revisions. */
+@media (min-width:701px) {
+  /* Bow sits above the closing brand, rather than behind it. */
+  .closing::before { top:-185px; z-index:30; }
+  .closing-content { z-index:7; }
+  .closing-content .contact-cta { position:relative; top:22px; }
+  /* Shared desktop footer: same markup and same geometry on all pages. */
+  .shared-footer { display:grid!important; grid-template-columns:1fr 2fr 1fr!important; gap:16px!important; padding:25px 5.55%!important; align-items:center!important; min-height:95px!important; }
+  .shared-footer .footer-handle { text-align:left!important; }
+  .shared-footer .footer-policy { text-align:center!important; }
+  .shared-footer .footer-year { text-align:right!important; }
+  .shared-footer .footer-mobile-emblem { display:none!important; }
+  /* Product detail: compact image and text with description slightly lower. */
+  .product-page { padding-top:20px!important; }
+  .product-layout { grid-template-columns:minmax(0,455px) minmax(0,519px)!important; gap:clamp(30px,6vw,90px)!important; }
+  .product-photo-frame { max-width:455px!important; }
+  .product-photo-frame>img { max-height:520px!important; }
+  .product-details .product-heading h1, .product-details .product-heading strong { font-size:24px!important; }
+  .product-details .breadcrumb { font-size:15px!important; }
+  .product-details .stock { font-size:15px!important; }
+  .product-details .description { margin-top:27px!important; }
+  .product-details .specs { margin-top:13px!important; }
+  .product-page .back { top:-35px!important; }
+}
+@media (max-width:700px) {
+  /* Ribbon: 3px lower than revision 9. */
+  .bestsellers>.ribbon { margin-top:43px!important; }
+  /* About heading uses uppercase and is 50px above its prior visual position. */
+  .about-copy { padding-top:150px!important; }
+  .about-copy h2 { text-transform:uppercase!important; position:relative!important; top:-50px!important; }
+  .about-copy h3 { margin-top:-35px!important; }
+  .about-copy .about-role, .about-copy p { position:relative; top:12px; }
+  /* Use the original dedicated mobile bow artwork. */
+  .closing::before { background-image:url('assets/mobile-10.png')!important; top:-90px!important; height:230px!important; background-size:105% auto!important; background-position:center top!important; z-index:30!important; }
+  .closing-content { top:110px!important; bottom:25px!important; z-index:7!important; }
+  .closing-content .contact-cta { margin:auto auto 0!important; transform:translateY(-20px); }
+  .closing-content .closing-social { margin:0 auto 0!important; }
+  .shared-footer { display:flex!important; flex-direction:column!important; align-items:center!important; gap:13px!important; padding:30px 18px!important; }
+  .shared-footer .footer-handle { display:none!important; }
+  .shared-footer .footer-mobile-emblem { display:block!important; order:-1!important; width:46px!important; }
+}

@@ -1,0 +1,6 @@
+/* Desktop: no outline over the portrait; preserve a clean edge around the text panel. */
+@media (min-width:701px) {
+  .about .about-top { border:0!important; border-radius:15px!important; overflow:hidden!important; box-shadow:none!important; }
+  .about .portrait-wrap, .about .portrait-wrap img { border:0!important; outline:0!important; box-shadow:none!important; }
+  .about .about-copy { border:1px solid #8E5B59!important; border-left:0!important; border-radius:0 15px 15px 0!important; min-height:100%!important; }
+}

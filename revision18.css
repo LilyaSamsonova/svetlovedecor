@@ -1,0 +1,57 @@
+/* Revision 18 — reconstruct the About section against the supplied Figma screenshots.
+   All changes are scoped to the home page and do not alter catalog/product. */
+@media (min-width:701px) {
+  /* Cream backdrop behind the upper card, burgundy below it. */
+  .about {
+    border-radius:0!important;
+    overflow:visible!important;
+    min-height:0!important;
+    padding:80px max(5.55%,calc((100vw - 1280px)/2)) 360px!important;
+    background:linear-gradient(to bottom,#F2ECE2 0,#F2ECE2 235px,#4F1217 235px,#4F1217 100%)!important;
+  }
+  .about-top {
+    display:grid!important;
+    grid-template-columns:40% 60%!important;
+    width:100%!important;
+    max-width:1280px!important;
+    min-height:0!important;
+    height:540px!important;
+    margin:0 auto!important;
+    padding:0!important;
+    overflow:hidden!important;
+    border:1px solid #8E5B59!important;
+    border-radius:15px!important;
+    background:#F2ECE2!important;
+  }
+  .portrait-wrap { position:relative!important; width:100%!important; height:100%!important; overflow:hidden!important; border-radius:0!important; }
+  .portrait-wrap img { width:100%!important; height:100%!important; min-height:0!important; object-fit:cover!important; object-position:center!important; border-radius:0!important; }
+  .about-copy { position:static!important; display:flex!important; flex-direction:column!important; align-items:stretch!important; padding:45px 52px 30px!important; color:#332920!important; }
+  .about-copy h2 { font:400 20px/1.3 Manrope,Arial,sans-serif!important; color:#928A81!important; margin:0 0 10px!important; }
+  .about-copy h3 { font:400 clamp(38px,3.8vw,55px)/1.06 Forum,Georgia,serif!important; color:#4F1217!important; margin:0 0 12px!important; white-space:normal!important; }
+  .about-copy .about-role { position:static!important; border-left:3px solid #4F1217!important; padding:0 0 0 15px!important; margin:0 0 30px!important; font:400 17px/1.4 Manrope,Arial,sans-serif!important; color:#332920!important; max-width:380px!important; }
+  .about-copy p,.about-copy p:first-of-type { font:400 19px/1.48 Manrope,Arial,sans-serif!important; margin:0 0 14px!important; }
+  .about blockquote { position:relative!important; z-index:2!important; max-width:1120px!important; margin:145px auto 0!important; padding:0 75px!important; transform:none!important; font:400 clamp(28px,2.85vw,40px)/1.42 Forum,Georgia,serif!important; color:#D4B47D!important; }
+  .about blockquote::before,.about blockquote::after { display:block!important; color:#D4B47D!important; font-size:135px!important; opacity:1!important; top:50%!important; transform:translateY(-50%)!important; }
+  .about blockquote::before {left:-24px!important}.about blockquote::after {right:-24px!important}
+  /* Keep the bow above the closing image and away from the quote. */
+  .closing::before { top:-225px!important; }
+}
+@media (max-width:700px) {
+  .about {
+    border-radius:0!important;
+    overflow:visible!important;
+    padding:55px 16px 210px!important;
+    background:linear-gradient(to bottom,#F2ECE2 0,#F2ECE2 250px,#4F1217 250px,#4F1217 100%)!important;
+  }
+  .about-top { display:flex!important; flex-direction:column!important; align-items:center!important; width:100%!important; gap:0!important; background:transparent!important; overflow:visible!important; border:0!important; }
+  .about-mobile-heading { display:block!important; order:0!important; width:100%!important; text-align:center!important; font:400 clamp(42px,12vw,54px)/1.1 Forum,Georgia,serif!important; color:#4F1217!important; margin:0 0 20px!important; }
+  .portrait-wrap { order:1!important; position:relative!important; width:100%!important; max-width:375px!important; margin:0 auto!important; padding:0!important; border-radius:24px 24px 0 0!important; overflow:hidden!important; }
+  .portrait-wrap img { display:block!important; width:100%!important; height:355px!important; min-height:0!important; max-height:none!important; object-fit:cover!important; object-position:center!important; border:1px solid #8E5B59!important; border-radius:24px 24px 0 0!important; }
+  .about-copy { order:2!important; display:flex!important; flex-direction:column!important; align-items:center!important; width:100%!important; padding:18px 7px 0!important; text-align:center!important; color:#F2ECE2!important; }
+  .about-copy h2 {display:none!important}
+  .about-copy h3 { position:static!important; margin:0 0 14px!important; font:400 clamp(40px,11vw,50px)/1.03 Forum,Georgia,serif!important; color:#D4B47D!important; text-transform:uppercase!important; max-width:360px!important; }
+  .about-copy .about-role { order:1!important; position:static!important; top:auto!important; max-width:295px!important; margin:0 auto 33px!important; padding:0!important; border:0!important; font:400 14px/1.4 Manrope,Arial,sans-serif!important; color:#F2ECE2!important; }
+  .about-copy p { order:2!important; position:static!important; top:auto!important; font:400 17px/1.5 Manrope,Arial,sans-serif!important; margin:0 0 20px!important; max-width:345px!important; }
+  .about blockquote { margin:80px auto 0!important; padding:0 5px!important; max-width:380px!important; transform:none!important; font:400 clamp(19px,5.5vw,23px)/1.42 Forum,Georgia,serif!important; color:#D4B47D!important; }
+  .about blockquote::before,.about blockquote::after { display:none!important; }
+}

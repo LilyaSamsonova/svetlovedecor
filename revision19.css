@@ -1,0 +1,17 @@
+/* Revision 19: requested About biography typography and mobile portrait corners. */
+@media (min-width: 701px) {
+  .about-copy p,
+  .about-copy p:first-of-type {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 700px) {
+  .about-copy p,
+  .about-copy p:first-of-type {
+    font-size: 19px !important;
+  }
+  .portrait-wrap,
+  .portrait-wrap img {
+    border-radius: 24px !important;
+  }
+}

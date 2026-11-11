@@ -1,0 +1,15 @@
+/* Revision 21: one continuous outline for the desktop About card. */
+@media (min-width: 701px) {
+  .about .about-top {
+    border: 1px solid #8E5B59 !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+  }
+  .about .portrait-wrap,
+  .about .portrait-wrap img {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+}

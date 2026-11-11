@@ -1,0 +1,22 @@
+/* Revision 16 — new bow, desktop price, mobile contact position */
+@media (min-width:701px) {
+  /* The bow overlaps the quote above the closing image, with no clipping. */
+  .about { overflow:visible!important; }
+  .closing { overflow:visible!important; isolation:isolate; }
+  .closing::before {
+    background-image:url('assets/velvet-bow-new.png')!important;
+    background-size:100% auto!important;
+    background-position:center top!important;
+    background-repeat:no-repeat!important;
+    top:-235px!important;
+    height:clamp(280px,38vw,780px)!important;
+    z-index:20!important;
+  }
+  .closing-content { z-index:21!important; }
+  .product-details .product-heading strong,
+  .product-heading #product-price { font-size:32px!important; line-height:1.15!important; }
+}
+@media (max-width:700px) {
+  /* Raise the contact button further into the closing photograph. */
+  .closing-content .contact-cta { transform:translateY(-165px)!important; }
+}
