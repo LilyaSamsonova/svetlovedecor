@@ -11,11 +11,11 @@ window.SVETLOVE_SHEETS = (() => {
       let settled=false;function finish(error,data){if(settled)return;settled=true;clearTimeout(timer);delete window[callback];script.remove();error?reject(error):resolve(data)}
       window[callback]=res=>{
         if(res.status!=='ok')return finish(new Error('Таблица не опубликована или недоступна'));
-        const t=res.table;const values=(t.rows||[]).map(row=>(row.c||[]).map(cell=>cell&&cell.v!=null?String(cell.v):''));
+        const t=res.table;const headers=(t.cols||[]).map(c=>String(c.label||c.id||'').trim());const values=[headers,...(t.rows||[]).map(row=>headers.map((_,i)=>{const cell=(row.c||[])[i];return cell&&cell.v!=null?String(cell.v):(cell&&cell.f!=null?String(cell.f):'')}))];
         finish(null,values);
       };
       script.onerror=()=>finish(new Error('Не удалось загрузить таблицу'));
-      script.src=`https://docs.google.com/spreadsheets/d/${id}/gviz/tq?gid=${gid}&headers=0&tqx=out:json;responseHandler:${callback}&_=${Date.now()}`;
+      script.src=`https://docs.google.com/spreadsheets/d/${id}/gviz/tq?gid=${gid}&headers=1&tqx=out:json;responseHandler:${callback}&_=${Date.now()}`;
       document.head.append(script);
     });
   }
