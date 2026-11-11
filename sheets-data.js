@@ -5,17 +5,17 @@ window.SVETLOVE_SHEETS = (() => {
   const sheetIds = {products:0,bestsellers:101,collections:102};
   function load(gid){
     return new Promise((resolve,reject)=>{
-      const callback='svetloveSheet_'+gid+'_'+Date.now();
+      const callback='svetloveSheet_'+gid+'_'+Date.now()+'_'+Math.random().toString(36).slice(2);
       const script=document.createElement('script');
       const timer=setTimeout(()=>finish(new Error('Таблица не ответила')),10000);
-      function finish(error,data){clearTimeout(timer);delete window[callback];script.remove();error?reject(error):resolve(data)}
+      let settled=false;function finish(error,data){if(settled)return;settled=true;clearTimeout(timer);delete window[callback];script.remove();error?reject(error):resolve(data)}
       window[callback]=res=>{
         if(res.status!=='ok')return finish(new Error('Таблица не опубликована или недоступна'));
         const t=res.table;const values=(t.rows||[]).map(row=>(row.c||[]).map(cell=>cell&&cell.v!=null?String(cell.v):''));
         finish(null,values);
       };
       script.onerror=()=>finish(new Error('Не удалось загрузить таблицу'));
-      script.src=`https://docs.google.com/spreadsheets/d/${id}/gviz/tq?gid=${gid}&headers=0&tqx=responseHandler:${callback}`;
+      script.src=`https://docs.google.com/spreadsheets/d/${id}/gviz/tq?gid=${gid}&headers=0&tqx=out:json;responseHandler:${callback}&_=${Date.now()}`;
       document.head.append(script);
     });
   }
