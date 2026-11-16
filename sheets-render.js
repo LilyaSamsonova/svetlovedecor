@@ -1,6 +1,6 @@
 (async()=>{
  const api=window.SVETLOVE_SHEETS;if(!api)return;
- const safeImage=s=>/^(https:\/\/|assets\/)[^\s"'<>]*$/i.test(s||'')?s:'assets/catalog-01.jpg';
+const safeImage=s=>/^(https:\/\/|assets\/|products\/)[^\s"'<>]*$/i.test(s||'')?s:'assets/catalog-01.jpg';
  const format=n=>Number(n).toLocaleString('ru-RU')+' ₽';
  const el=(tag,cls,txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!=null)n.textContent=txt;return n};
  const diagnostic=(section,error)=>{console.warn('SVETLOVE Google Sheets ['+section+']:',error);window.SVETLOVE_SHEET_STATUS[section]={ok:false,error:String(error?.message||error)};};
