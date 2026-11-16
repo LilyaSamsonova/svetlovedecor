@@ -124,6 +124,50 @@
     right: 20px !important;
   }
 }
+
+.sv-lightbox button {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 50% !important;
+  flex: none !important;
+  line-height: 1 !important;
+}
+
+.sv-lightbox .prev,
+.sv-lightbox .next {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  max-width: 44px !important;
+  max-height: 44px !important;
+}
+
+.sv-lightbox .close {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.sv-lightbox button svg {
+  display: block !important;
+  width: 24px !important;
+  height: 24px !important;
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 2.2 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  pointer-events: none;
+}
+
+.sv-lightbox button[hidden] {
+  display: none !important;
+}
+
   `;
   document.head.append(style);
 
