@@ -153,7 +153,12 @@
     show(current + step);
   }
 
-  image.addEventListener('click', open);
+document.querySelector('.product-photo-frame')
+  ?.addEventListener('click', e => {
+    if (e.target.closest('.gallery-arrow')) return;
+    open();
+  });
+
 
   box.querySelector('.close').addEventListener('click', close);
   box.querySelector('.prev').addEventListener('click', () => move(-1));
