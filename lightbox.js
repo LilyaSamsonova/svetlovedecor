@@ -378,7 +378,7 @@ document.querySelector('.product-photo-frame')
     if (e.target.closest('.gallery-arrow')) return;
     open();
   });
-
+image.addEventListener('click', open);
 
   box.querySelector('.close').addEventListener('click', close);
   box.querySelector('.prev').addEventListener('click', () => move(-1));
