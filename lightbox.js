@@ -84,6 +84,46 @@
         background: rgba(0,0,0,.4);
       }
     }
+    
+/* Исправление кнопок полноэкранной галереи */
+.sv-lightbox button {
+  box-sizing: border-box !important;
+  flex-shrink: 0 !important;
+  padding: 0 !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+@media (max-width: 600px) {
+  .sv-lightbox .prev,
+  .sv-lightbox .next {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    border-radius: 50% !important;
+  }
+
+  .sv-lightbox .prev {
+    left: 12px !important;
+  }
+
+  .sv-lightbox .next {
+    right: 12px !important;
+  }
+
+  .sv-lightbox .close {
+    top: 20px !important;
+    right: 20px !important;
+  }
+}
   `;
   document.head.append(style);
 
