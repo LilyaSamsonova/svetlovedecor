@@ -79,7 +79,7 @@
 
       .sv-lightbox .prev,
       .sv-lightbox .next {
-        width: 36px;
+        width: 44px;
         height: 44px;
         background: rgba(0,0,0,.4);
       }
