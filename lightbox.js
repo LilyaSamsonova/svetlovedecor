@@ -1,4 +1,3 @@
-
 (() => {
   const image = document.querySelector('#product-image');
   if (!image) return;
