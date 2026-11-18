@@ -76,12 +76,21 @@
       .sv-lightbox .prev { left: 8px; }
       .sv-lightbox .next { right: 8px; }
 
-      .sv-lightbox .prev,
-      .sv-lightbox .next {
-        width: 36px;
-        height: 44px;
-        background: rgba(0,0,0,.4);
-      }
+      
+.sv-lightbox .prev,
+.sv-lightbox .next {
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 44px;
+  max-height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(0,0,0,.4);
+}
+
     }
   `;
   document.head.append(style);
