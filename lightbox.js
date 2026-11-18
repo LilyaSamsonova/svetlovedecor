@@ -92,6 +92,25 @@
 }
 
     }
+    
+.sv-lightbox.open > button.prev,
+.sv-lightbox.open > button.next {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  max-width: 44px !important;
+  max-height: 44px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  flex: none !important;
+  aspect-ratio: 1 / 1 !important;
+}
+
   `;
   document.head.append(style);
 
